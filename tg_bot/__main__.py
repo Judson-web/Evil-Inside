@@ -26,19 +26,18 @@ from tg_bot.modules.helper_funcs.misc import paginate_modules
 
 
 PM_START_TEXT = """
-*𝙷𝚢 {} , 𝙼𝚢 𝙽𝚊𝚖𝚎 𝚒𝚜 {}!*
+𝙷𝚢 {} , 𝙼𝚢 𝙽𝚊𝚖𝚎 𝚒𝚜 {}!
 
-𝙸 𝚊𝚖 𝚊𝚗 *𝚂𝚄𝙿𝙴𝚁*  𝚐𝚛𝚘𝚞𝚙 𝚖𝚊𝚗𝚊𝚐𝚎𝚖𝚎𝚗𝚝 𝚋𝚘𝚝.
+𝙸 𝙰𝚖 𝙿𝚛𝚒𝚖𝚎𝚛 𝚁𝚘𝚘𝚖 𝙼𝚊𝚗𝚊𝚐𝚎𝚛.
 
-𝚈𝚘𝚞 𝚌𝚊𝚗 𝚏𝚒𝚗𝚍 𝚝𝚑𝚎 𝚕𝚒𝚜𝚝 𝚘𝚏 𝚊𝚟𝚊𝚒𝚕𝚊𝚋𝚕𝚎 𝚌𝚘𝚖𝚖𝚊𝚗𝚍𝚜 𝚠𝚒𝚝𝚑 /help
-
+𝙵𝚘𝚛 𝙼𝚘𝚛𝚎 𝙷𝚒𝚝 /help
 """
 
 HELP_STRINGS = """
 
-𝙷𝙴𝙻𝙻𝙾 𝚃𝙷𝙴𝚁𝙴 𝙼𝚈 𝙽𝙰𝙼𝙴 𝙸𝚂 *{}*
+𝙷𝙴𝙻𝙻𝙾 𝚃𝙷𝙴𝚁𝙴 𝙼𝚈 𝙽𝙰𝙼𝙴 𝙸𝚂 {}
 
-*𝙼𝚊𝚒𝚗* 𝚌𝚘𝚖𝚖𝚊𝚗𝚍𝚜  𝚊𝚟𝚊𝚒𝚕𝚊𝚋𝚕𝚎:
+𝙼𝚊𝚒𝚗 𝚌𝚘𝚖𝚖𝚊𝚗𝚍𝚜  𝚊𝚟𝚊𝚒𝚕𝚊𝚋𝚕𝚎:
  - /start: 𝚜𝚝𝚊𝚛𝚝 𝚝𝚑𝚎 𝚋𝚘𝚝
  - /help: 𝙿𝙼'𝚂 𝚈𝙾𝚄 𝚃𝙷𝙸𝚂 𝙼𝙴𝚂𝚂𝙰𝙶𝙴
  - /help <𝚖𝚘𝚍𝚞𝚕𝚎 𝚗𝚊𝚖𝚎>: 𝙿𝙼'𝚜 𝚢𝚘𝚞 𝚒𝚗𝚏𝚘 𝚊𝚋𝚘𝚞𝚝 𝚝𝚑𝚊𝚝 module.
@@ -143,12 +142,12 @@ def start(bot: Bot, update: Update, args: List[str]):
                 PM_START_TEXT.format(escape_markdown(first_name), escape_markdown(bot.first_name), OWNER_ID),
                 parse_mode=ParseMode.MARKDOWN, reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton(text="𝙷𝙴𝙻𝙿",
                                                                        callback_data="help_back".format(bot.username)),
-                                                                                   InlineKeyboardButton(text="𝙲𝙷𝙰𝙽𝙽𝙴𝙻",
-                                                                       url="t.me/M_STER_TECH")],
-                                                                                   [InlineKeyboardButton(text= "𝙳𝙴𝙿𝙻𝙾𝚈",
-                                                                       url="https://youtu.be/Bz8AUvN5bSo"),
-                                                                                   InlineKeyboardButton(text="𝚂𝙾𝚄𝚁𝙲𝙴 𝙲𝙾𝙳𝙴",
-                                                                       url="https://github.com/PANDITHAN/Evil-Inside")
+                                                                                   InlineKeyboardButton(text="𝙱𝙾𝚃 𝙴𝙳𝙸𝚃𝙾𝚁",
+                                                                       url="t.me/VAMPIRE_KING_NO_1")],
+                                                                                   [InlineKeyboardButton(text= "𝙰𝙽𝚈 𝙷𝙴𝙻𝙿",
+                                                                       url="t.me/STMbOTsUPPORTgROUP"),
+                                                                                   InlineKeyboardButton(text="𝙼𝙾𝚅𝙸𝙴 𝙶𝚁𝙾𝚄𝙿",
+                                                                       url="t.me/primer_roomm")
                                                                                  ]]))
 
     else:
